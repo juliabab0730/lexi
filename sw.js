@@ -1,6 +1,6 @@
-const CACHE = "lexi-shell-v1";
+const CACHE = "flexi-shell-v3";
 self.addEventListener("install", event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(["./","./index.html","./manifest.webmanifest"])));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png"])));
   self.skipWaiting();
 });
 self.addEventListener("activate", event => {
