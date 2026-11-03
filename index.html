@@ -179,6 +179,10 @@ body{background:radial-gradient(ellipse at 16% 8%,#fff 0,transparent 24%),radial
  .feature p{margin-bottom:49px}
 }
 @media(max-width:560px){
+ /* Mobile hero: keep the mascot fully visible, compact, and just below search */
+ .hero{grid-template-columns:1fr;gap:0;padding-bottom:8px}
+ .hero-art{min-height:0;height:112px;margin-top:2px;display:flex;align-items:center;justify-content:center;overflow:visible}
+ .hero-art .flower-scene{width:116px;max-width:42vw;max-height:112px;height:auto;object-fit:contain}
  .feature-grid{grid-template-columns:1fr}
  .feature{min-height:190px;grid-template-columns:118px minmax(0,1fr);column-gap:12px;padding:15px 16px 15px 9px}
  .feature-emoji{height:150px}
