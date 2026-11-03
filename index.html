@@ -221,7 +221,7 @@ body{background:radial-gradient(ellipse at 16% 8%,#fff 0,transparent 24%),radial
   }
   .hero > div:first-child{
     position:relative;
-    padding-right:clamp(78px,24vw,94px);
+    padding-right:0;
     text-align:left;
   }
   .hero .eyebrow{
@@ -231,7 +231,7 @@ body{background:radial-gradient(ellipse at 16% 8%,#fff 0,transparent 24%),radial
     line-height:1.35;
   }
   .hero h1{
-    max-width:100%;
+    max-width:calc(100% - clamp(78px,24vw,94px));
     margin:8px 0 12px;
     font-size:clamp(27px,8.5vw,32px);
     line-height:1.04;
@@ -243,6 +243,14 @@ body{background:radial-gradient(ellipse at 16% 8%,#fff 0,transparent 24%),radial
     margin:0 0 15px;
     font-size:13px;
     text-align:left;
+  }
+  .search,
+  .dictionary-result{
+    width:100%;
+    max-width:none;
+  }
+  .dictionary-result{
+    min-height:210px;
   }
   .hero-art{
     position:absolute;
@@ -447,7 +455,7 @@ body{background:radial-gradient(ellipse at 16% 8%,#fff 0,transparent 24%),radial
 </section>
 </div>
 
-<div class="foot"><strong>Flexi <span style="font-style:italic;color:#2583ae">By Y</span></strong><br>Stay curious. Keep growing. 🌼<div style="margin-top:14px;line-height:1.7;font-size:12px;color:#668398">Юлия Бабешко<br>tg: @shyuuu0</div></div>
+<div class="foot"><strong>Flexi <span style="font-style:italic;color:#2583ae">By Y</span></strong><br>Stay curious. Keep growing. 🌼</div>
 </div><div class="toast" id="toast" role="status"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
