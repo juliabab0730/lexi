@@ -208,6 +208,66 @@ body{background:radial-gradient(ellipse at 16% 8%,#fff 0,transparent 24%),radial
 .feature-nav .section-head{display:none}
 @media(max-width:820px){.mywords-layout{grid-template-columns:1fr}.dictionary-result{max-width:none}.word-detail{min-height:220px}}
 
+
+
+/* Mobile-only hero layout: place the daisy beside the headline.
+   Desktop layout remains exactly as before. */
+@media (max-width:560px){
+  .hero{
+    position:relative;
+    display:block;
+    padding:30px 4px 16px;
+    text-align:left;
+  }
+  .hero > div:first-child{
+    position:relative;
+    padding-right:clamp(78px,24vw,94px);
+    text-align:left;
+  }
+  .hero .eyebrow{
+    max-width:100%;
+    font-size:9px;
+    letter-spacing:.09em;
+    line-height:1.35;
+  }
+  .hero h1{
+    max-width:100%;
+    margin:8px 0 12px;
+    font-size:clamp(27px,8.5vw,32px);
+    line-height:1.04;
+    letter-spacing:-1.5px;
+    text-align:left;
+  }
+  .hero p{
+    max-width:none;
+    margin:0 0 15px;
+    font-size:13px;
+    text-align:left;
+  }
+  .hero-art{
+    position:absolute;
+    top:38px;
+    right:2px;
+    width:clamp(68px,21vw,82px);
+    height:clamp(72px,23vw,88px);
+    min-height:0;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:visible;
+    pointer-events:none;
+  }
+  .hero-art .flower-scene{
+    display:block;
+    width:100%;
+    max-width:100%;
+    max-height:100%;
+    height:auto;
+    object-fit:contain;
+  }
+}
+
 </style>
 </head>
 <body>
