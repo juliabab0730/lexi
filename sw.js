@@ -1,6 +1,6 @@
-const CACHE = "flexi-shell-v3";
+const CACHE = "flexi-shell-v4";
 self.addEventListener("install", event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png"])));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png","./flower-mascot.png"])));
   self.skipWaiting();
 });
 self.addEventListener("activate", event => {
