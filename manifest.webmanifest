@@ -1,10 +1,11 @@
 {
-  "name": "Lexi — English Dictionary",
-  "short_name": "Lexi",
+  "name": "Flexi by Y — English Learning",
+  "short_name": "Flexi",
+  "description": "Learn English through words and curious stories.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f7f7f5",
-  "theme_color": "#f7f7f5",
+  "background_color": "#dff5ff",
+  "theme_color": "#bcecff",
   "icons": [
     {"src":"./icon-192.png","sizes":"192x192","type":"image/png"},
     {"src":"./icon-512.png","sizes":"512x512","type":"image/png"}
